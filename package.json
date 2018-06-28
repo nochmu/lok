@@ -1,0 +1,22 @@
+{
+  "name": "lok",
+  "version": "0.0.1",
+  "description": "Yet Another Logger Package",
+  "main": "lok.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nochmu/lok.git"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "nochmu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nochmu/lok/issues"
+  },
+  "homepage": "https://github.com/nochmu/lok#readme"
+}
