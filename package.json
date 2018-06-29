@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nochmu/lok.git"
+    "url": "git+https://github.com/nochmu/node-lok.git"
   },
   "keywords": [
     "logger"
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/nochmu/lok/issues"
   },
-  "homepage": "https://github.com/nochmu/lok#readme"
+  "homepage": "https://github.com/nochmu/lok#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
