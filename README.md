@@ -1,3 +1,5 @@
+# LOK
+A simple logger for node.js. 
 
 
 

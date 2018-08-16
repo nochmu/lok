@@ -22,7 +22,6 @@ class Logger {
 	 this.indentVal = 0;
 	}
 
-
 	message(level, msg, ...args){
 		if(this.logLevel >= level){
 			var lv = Object.values(levels).find(x => x.v === level);
