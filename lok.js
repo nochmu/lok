@@ -23,7 +23,7 @@ class Logger {
 	}
 
 
-	log(level, msg, ...args){
+	message(level, msg, ...args){
 		if(this.logLevel >= level){
 			var lv = Object.values(levels).find(x => x.v === level);
 			if(lv !== undefined){
@@ -41,18 +41,22 @@ class Logger {
 		this.logLevel = levels[level].v;
 	}
 
+	log(msg, ...args){
+		return this.info(msg,...args);
+	}
+
 	error(msg, ...args){
-		this.log(levels.error.v, msg, ...args);
+		this.message(levels.error.v, msg, ...args);
 		return this;
 	}
 
 	info(msg, ...args){
-		this.log(levels.info.v, msg, ...args);
+		this.message(levels.info.v, msg, ...args);
 		return this;
 	}
 
 	trace(msg, ...args){
-		this.log(levels.trace.v, msg, ...args);
+		this.message(levels.trace.v, msg, ...args);
 		return this;
 	}
 
@@ -78,11 +82,6 @@ class Logger {
 		return this;
 	}
 
-
-
-
 };
 
-
 module.exports = new Logger();
-
